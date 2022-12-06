@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+
+    <link rel="stylesheet" href="./asset/fonts-icons/fontawesome-free-5.15.3-web/css/all.css">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <title>Music player</title>
+</head>
+
+<body>
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Now playing:</h4>
+                <h2>String 57th & 9th</h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd ">
+                <div class="cd-thumb" style="background-image: url('')">
+                </div>
+            </div> 
+
+            <!--  Active -->
+            <div class="activity">
+                <div class="btn btn-heart">
+                    <i class="far fa-heart icon-nolike"></i>
+                    <i class="fas fa-heart icon-like"></i>
+                    <div class="heart-content">
+                        <p>Yêu thích</p>
+                    </div>
+                </div>
+                <div class="btn btn-share">
+                    <i class="fas fa-share-alt icon-share"></i>
+                    <div class="share-content">
+                        <p>Chia sẻ</p>
+                    </div>
+                </div>
+                <div class="btn btn-download">
+                    <i class="fas fa-download icon-download"></i>
+                    <div class="download-content">
+                        <p>Tải xuống</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="fas fa-pause icon-pause"></i>
+                    <i class="fas fa-play icon-play"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
+
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+            <div class="times">
+                <div class="currentTime"></div>
+                <div class="totalTime"></div>
+            </div>
+
+            <input id="progressVolume" class="progressVolume" type="range" value="100" step="1" min="0" max="100">
+            <div class="volume">
+                <p class="volumeContent">Âm lượng</p>
+                <div class="volumeCurrent">100%</div>
+            </div>
+
+            <audio id="audio" src=""></audio>
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist">
+
+        </div>
+    </div>
+
+
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
